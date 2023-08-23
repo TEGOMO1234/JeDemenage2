@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.JeDemenage" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimaryDark">#62198F</item>
+        <item name="colorPrimary">#DAB80C</item>
+        <item name="colorAccent">@color/design_default_color_on_secondary</item>
+        <item name="android:windowDisablePreview">true</item>
+        //changer la couleur //
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
+        <item name="android:navigationBarColor" >@color/black</item>
+    </style>
+</resources>

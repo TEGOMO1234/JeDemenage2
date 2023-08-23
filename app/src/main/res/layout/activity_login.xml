@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/relocationservice"
+    tools:context=".Login">
+
+    <Button
+        android:id="@+id/ConnexionViaGoogle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/bouton_de_connexion"
+        android:drawableLeft="@drawable/compte_google"
+        android:drawableTint="@color/black"
+        android:padding="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Se Connecter avec Google"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:onClick="connexionauClick"
+        android:id="@+id/ConnexionAvecNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bouton_de_connexion"
+        android:drawableLeft="@drawable/tel"
+        android:drawableTint="@color/black"
+        android:padding="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="Se Connecter avec un Numero"
+        app:layout_constraintBottom_toTopOf="@+id/ConnexionViaGoogle"
+        app:layout_constraintEnd_toEndOf="@+id/ConnexionViaGoogle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/ConnexionViaGoogle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
